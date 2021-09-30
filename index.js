@@ -23,16 +23,37 @@ const questions = [
         default: 'npm i'
     },
     {
+        type: 'input',
+        name: 'link',
+        message: 'Enter the link to your demo'
+    },
+    {
+        type: 'checkbox',
+        name: 'technologies',
+        message: 'What tech did you use? Check all that apply',
+        choices: ['JavaScript', 'CSS', 'HTML', 'NodeJS', 'Python', 'C++', 'C#']
+    },
+    {
         type: 'list',
         name: 'license',
         message: 'Choose your license, Nave',
-        choices: ['MIT', 'BSD 3', 'none']
+        choices: ['MIT', 'Apache 2.0', 'Creative Commons', 'GNU General Public', 'none']
     },
     {
         type: 'input',
         name: 'test',
         message: 'How do you test?',
         default: 'npm test'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your email adress'
+    },
+    {
+        type: 'input',
+        name: 'gitHub',
+        message: 'What is your Git Hub username?'
     }
 ];
 

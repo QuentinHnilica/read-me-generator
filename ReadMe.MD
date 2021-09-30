@@ -1,5 +1,5 @@
-# ReadMe
-  ![Git Hub](https://img.shields.io/badge/license-BSD 3-blue.svg)
+# 
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   # Table of Contents
  [Installation](#install)
@@ -8,11 +8,14 @@
  [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
 
   ## Installation
-   npm i
+  npm i
   
   ## Description
-   ITs a readme
+  
+
+  ## License ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) (https://opensource.org/licenses/MIT)
   
   
-  ## npm test
+  ## Test
+  npm test
   
