@@ -18,6 +18,12 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'contribution',
+        message: 'Enter Contribution Details',
+        default: 'This was a solo Project'
+    },
+    {
+        type: 'input',
         name: 'install',
         message: "What do you need to install?",
         default: 'npm i'
@@ -26,6 +32,21 @@ const questions = [
         type: 'input',
         name: 'link',
         message: 'Enter the link to your demo'
+    },
+    {
+        type: 'input',
+        name: 'usage1',
+        message: 'How do you use this program? (1/3)'
+    },
+    {
+        type: 'input',
+        name: 'usage2',
+        message: 'How do you use this program? (2/3)'
+    },
+    {
+        type: 'input',
+        name: 'usage3',
+        message: 'How do you use this program? (3/3)'
     },
     {
         type: 'checkbox',

@@ -55,27 +55,63 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  let mytech // To create a list of the tech used incase you use many
+  for (let i = 0; i < data.technologies.length; i++){
+    if (i === 0){
+      mytech = '- ' + data.technologies[i] 
+    }
+    else{
+      mytech = mytech + '\n- ' + data.technologies[i] 
+    }
+  }
+  const link = data.link
+  let Deployment = ''
+  if (link != ''){
+    Deployment = 'Deployment'
+  }
+  let myLicense = ''
+  if (data.license != 'none'){
+    myLicense = 'License'
+  }
   return `# ${data.title}
-  ${renderLicenseBadge(data.license)}
+
+  ## Description
+  ${data.description}
 
   # Table of Contents
  [Installation](#install)
- [Description](#description)
  [Test](#test)
- [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+ [Usage](#usage)
+ [Tech](#tech)
+ [${Deployment}](#deployment)
+ [${myLicense}](#license)
+ [Contributions](#contributions)
+ [Contact](#contact)
 
   ## Installation
   ${data.install}
   
-  ## Description
-  ${data.description}
-
-  ${renderLicenseSection(data.license)}
-  
-  
   ## Test
   ${data.test}
+
+  ## Usage
+  1. ${data.usage1}
+  2. ${data.usage2}
+  3. ${data.usage3}
+
+  ## Tech
+  ${mytech}
+
+  ## ${Deployment}
+  ${link}
+
+  ${renderLicenseSection(data.license)}
+
+  ## Contributions
+  ${data.contribution}
   
+  ## Contact
+  for any questions or inquaries send me an email at ${data.email} and follow [my Github](https://www.github.com/${data.gitHub})
 `;
 }
 
